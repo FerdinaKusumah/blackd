@@ -10,6 +10,6 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 RUN chmod 755 start.sh
-EXPOSE 45484
+EXPOSE $PORT
 
 CMD ["sh", "/usr/src/app/start.sh"]
